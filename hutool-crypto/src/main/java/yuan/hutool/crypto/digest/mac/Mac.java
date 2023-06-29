@@ -16,7 +16,7 @@ import java.nio.charset.Charset;
 import java.security.MessageDigest;
 
 /**
- * MAC摘要算法（此类兼容和JCE的 {@code javax.crypto.Mac}对象和BC库的{@code org.bouncycastle.crypto.Mac}对象）<br>
+ * MAC摘要算法（此类兼容和JCE的 {@code javax.crypto.Mac}对象和BC库的{@code yuan.bouncycastle.crypto.Mac}对象）<br>
  * MAC，全称为“Message Authentication Code”，中文名“消息鉴别码”<br>
  * 主要是利用指定算法，以一个密钥和一个消息为输入，生成一个消息摘要作为输出。<br>
  * 一般的，消息鉴别码用于验证传输于两个共同享有一个密钥的单位之间的消息。<br>

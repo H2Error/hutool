@@ -1,11 +1,11 @@
 package yuan.hutool.crypto.digest.mac;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.macs.HMac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
+import yuan.bouncycastle.crypto.CipherParameters;
+import yuan.bouncycastle.crypto.Digest;
+import yuan.bouncycastle.crypto.Mac;
+import yuan.bouncycastle.crypto.macs.HMac;
+import yuan.bouncycastle.crypto.params.KeyParameter;
+import yuan.bouncycastle.crypto.params.ParametersWithIV;
 
 /**
  * BouncyCastle的HMAC算法实现引擎，使用{@link Mac} 实现摘要<br>

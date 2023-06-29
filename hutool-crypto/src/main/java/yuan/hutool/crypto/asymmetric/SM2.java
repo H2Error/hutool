@@ -3,21 +3,21 @@ package yuan.hutool.crypto.asymmetric;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.HexUtil;
 import yuan.hutool.crypto.*;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.bouncycastle.crypto.digests.SM3Digest;
-import org.bouncycastle.crypto.engines.SM2Engine;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.crypto.params.ParametersWithID;
-import org.bouncycastle.crypto.params.ParametersWithRandom;
-import org.bouncycastle.crypto.signers.DSAEncoding;
-import org.bouncycastle.crypto.signers.PlainDSAEncoding;
-import org.bouncycastle.crypto.signers.SM2Signer;
-import org.bouncycastle.crypto.signers.StandardDSAEncoding;
-import org.bouncycastle.util.BigIntegers;
-import org.bouncycastle.util.encoders.Hex;
+import yuan.bouncycastle.crypto.CipherParameters;
+import yuan.bouncycastle.crypto.Digest;
+import yuan.bouncycastle.crypto.InvalidCipherTextException;
+import yuan.bouncycastle.crypto.digests.SM3Digest;
+import yuan.bouncycastle.crypto.engines.SM2Engine;
+import yuan.bouncycastle.crypto.params.ECPrivateKeyParameters;
+import yuan.bouncycastle.crypto.params.ECPublicKeyParameters;
+import yuan.bouncycastle.crypto.params.ParametersWithID;
+import yuan.bouncycastle.crypto.params.ParametersWithRandom;
+import yuan.bouncycastle.crypto.signers.DSAEncoding;
+import yuan.bouncycastle.crypto.signers.PlainDSAEncoding;
+import yuan.bouncycastle.crypto.signers.SM2Signer;
+import yuan.bouncycastle.crypto.signers.StandardDSAEncoding;
+import yuan.bouncycastle.util.BigIntegers;
+import yuan.bouncycastle.util.encoders.Hex;
 
 import java.math.BigInteger;
 import java.security.PrivateKey;
@@ -353,7 +353,7 @@ public class SM2 extends AbstractAsymmetricCrypto<SM2> {
 			signer.init(true, param);
 			signer.update(data, 0, data.length);
 			return signer.generateSignature();
-		} catch (org.bouncycastle.crypto.CryptoException e) {
+		} catch (yuan.bouncycastle.crypto.CryptoException e) {
 			throw new CryptoException(e);
 		} finally {
 			lock.unlock();

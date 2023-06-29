@@ -926,7 +926,7 @@ public class KeyUtil {
 	 * 编码压缩EC公钥（基于BouncyCastle）<br>
 	 * 见：https://www.cnblogs.com/xinzhao/p/8963724.html
 	 *
-	 * @param publicKey {@link PublicKey}，必须为org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPublicKey
+	 * @param publicKey {@link PublicKey}，必须为yuan.bouncycastle.jcajce.provider.asymmetric.ec.BCECPublicKey
 	 * @return 压缩得到的X
 	 * @since 4.4.4
 	 */

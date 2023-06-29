@@ -1,21 +1,21 @@
 package yuan.hutool.crypto;
 
 import cn.hutool.core.io.IORuntimeException;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.sec.ECPrivateKey;
-import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
-import org.bouncycastle.asn1.x9.X9ObjectIdentifiers;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
-import org.bouncycastle.jcajce.spec.OpenSSHPrivateKeySpec;
-import org.bouncycastle.jcajce.spec.OpenSSHPublicKeySpec;
-import org.bouncycastle.math.ec.ECCurve;
-import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.ec.FixedPointCombMultiplier;
-import org.bouncycastle.util.BigIntegers;
+import yuan.bouncycastle.asn1.pkcs.PrivateKeyInfo;
+import yuan.bouncycastle.asn1.sec.ECPrivateKey;
+import yuan.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import yuan.bouncycastle.asn1.x9.X9ObjectIdentifiers;
+import yuan.bouncycastle.crypto.params.AsymmetricKeyParameter;
+import yuan.bouncycastle.crypto.params.ECDomainParameters;
+import yuan.bouncycastle.crypto.params.ECPrivateKeyParameters;
+import yuan.bouncycastle.crypto.params.ECPublicKeyParameters;
+import yuan.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
+import yuan.bouncycastle.jcajce.spec.OpenSSHPrivateKeySpec;
+import yuan.bouncycastle.jcajce.spec.OpenSSHPublicKeySpec;
+import yuan.bouncycastle.math.ec.ECCurve;
+import yuan.bouncycastle.math.ec.ECPoint;
+import yuan.bouncycastle.math.ec.FixedPointCombMultiplier;
+import yuan.bouncycastle.util.BigIntegers;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -183,7 +183,7 @@ public class ECKeyUtil {
 	 * @return ECPublicKeyParameters
 	 * @since 5.4.3
 	 */
-	public static ECPublicKeyParameters toPublicParams(org.bouncycastle.math.ec.ECPoint point, ECDomainParameters domainParameters) {
+	public static ECPublicKeyParameters toPublicParams(yuan.bouncycastle.math.ec.ECPoint point, ECDomainParameters domainParameters) {
 		return new ECPublicKeyParameters(point, domainParameters);
 	}
 

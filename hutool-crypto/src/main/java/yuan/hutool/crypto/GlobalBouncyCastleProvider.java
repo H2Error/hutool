@@ -3,7 +3,7 @@ package yuan.hutool.crypto;
 import java.security.Provider;
 
 /**
- * 全局单例的 org.bouncycastle.jce.provider.BouncyCastleProvider 对象
+ * 全局单例的 yuan.bouncycastle.jce.provider.BouncyCastleProvider 对象
  *
  * @author looly
  */

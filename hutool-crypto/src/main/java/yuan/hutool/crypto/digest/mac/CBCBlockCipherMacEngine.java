@@ -1,12 +1,12 @@
 package yuan.hutool.crypto.digest.mac;
 
-import org.bouncycastle.crypto.BlockCipher;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.macs.CBCBlockCipherMac;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
+import yuan.bouncycastle.crypto.BlockCipher;
+import yuan.bouncycastle.crypto.CipherParameters;
+import yuan.bouncycastle.crypto.Digest;
+import yuan.bouncycastle.crypto.Mac;
+import yuan.bouncycastle.crypto.macs.CBCBlockCipherMac;
+import yuan.bouncycastle.crypto.params.KeyParameter;
+import yuan.bouncycastle.crypto.params.ParametersWithIV;
 
 import java.security.Key;
 

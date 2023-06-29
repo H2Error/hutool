@@ -6,7 +6,7 @@ import java.security.Provider;
  * Provider对象生产工厂类
  *
  * <pre>
- * 1. 调用{@link #createBouncyCastleProvider()} 用于新建一个org.bouncycastle.jce.provider.BouncyCastleProvider对象
+ * 1. 调用{@link #createBouncyCastleProvider()} 用于新建一个yuan.bouncycastle.jce.provider.BouncyCastleProvider对象
  * </pre>
  *
  * @author looly
@@ -21,7 +21,7 @@ public class ProviderFactory {
 	 * @return {@link Provider}
 	 */
 	public static Provider createBouncyCastleProvider() {
-		final org.bouncycastle.jce.provider.BouncyCastleProvider provider = new org.bouncycastle.jce.provider.BouncyCastleProvider();
+		final yuan.bouncycastle.jce.provider.BouncyCastleProvider provider = new yuan.bouncycastle.jce.provider.BouncyCastleProvider();
 		// issue#2631@Github
 		SecureUtil.addProvider(provider);
 		return provider;

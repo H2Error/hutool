@@ -3,8 +3,8 @@ package yuan.hutool.crypto.symmetric.fpe;
 import yuan.hutool.crypto.KeyUtil;
 import yuan.hutool.crypto.Padding;
 import yuan.hutool.crypto.symmetric.AES;
-import org.bouncycastle.crypto.AlphabetMapper;
-import org.bouncycastle.jcajce.spec.FPEParameterSpec;
+import yuan.bouncycastle.crypto.AlphabetMapper;
+import yuan.bouncycastle.jcajce.spec.FPEParameterSpec;
 
 import java.io.Serializable;
 

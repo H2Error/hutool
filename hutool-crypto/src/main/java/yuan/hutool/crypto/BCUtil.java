@@ -1,20 +1,20 @@
 package yuan.hutool.crypto;
 
 import cn.hutool.core.io.IORuntimeException;
-import org.bouncycastle.asn1.pkcs.PrivateKeyInfo;
-import org.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
-import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
-import org.bouncycastle.crypto.params.ECDomainParameters;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
-import org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey;
-import org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPublicKey;
-import org.bouncycastle.jcajce.provider.asymmetric.util.EC5Util;
-import org.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
-import org.bouncycastle.jce.spec.ECNamedCurveSpec;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-import org.bouncycastle.math.ec.ECCurve;
+import yuan.bouncycastle.asn1.pkcs.PrivateKeyInfo;
+import yuan.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
+import yuan.bouncycastle.asn1.x9.X9ECParameters;
+import yuan.bouncycastle.crypto.params.AsymmetricKeyParameter;
+import yuan.bouncycastle.crypto.params.ECDomainParameters;
+import yuan.bouncycastle.crypto.params.ECPrivateKeyParameters;
+import yuan.bouncycastle.crypto.params.ECPublicKeyParameters;
+import yuan.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey;
+import yuan.bouncycastle.jcajce.provider.asymmetric.ec.BCECPublicKey;
+import yuan.bouncycastle.jcajce.provider.asymmetric.util.EC5Util;
+import yuan.bouncycastle.jcajce.provider.asymmetric.util.ECUtil;
+import yuan.bouncycastle.jce.spec.ECNamedCurveSpec;
+import yuan.bouncycastle.jce.spec.ECParameterSpec;
+import yuan.bouncycastle.math.ec.ECCurve;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -36,7 +36,7 @@ public class BCUtil {
 	/**
 	 * 只获取私钥里的d，32字节
 	 *
-	 * @param privateKey {@link PublicKey}，必须为org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey
+	 * @param privateKey {@link PublicKey}，必须为yuan.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey
 	 * @return 压缩得到的X
 	 * @since 5.1.6
 	 */
@@ -48,7 +48,7 @@ public class BCUtil {
 	 * 编码压缩EC公钥（基于BouncyCastle），即Q值<br>
 	 * 见：https://www.cnblogs.com/xinzhao/p/8963724.html
 	 *
-	 * @param publicKey {@link PublicKey}，必须为org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPublicKey
+	 * @param publicKey {@link PublicKey}，必须为yuan.bouncycastle.jcajce.provider.asymmetric.ec.BCECPublicKey
 	 * @return 压缩得到的Q
 	 * @since 4.4.4
 	 */
@@ -60,7 +60,7 @@ public class BCUtil {
 	 * 编码压缩EC公钥（基于BouncyCastle），即Q值<br>
 	 * 见：https://www.cnblogs.com/xinzhao/p/8963724.html
 	 *
-	 * @param publicKey {@link PublicKey}，必须为org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPublicKey
+	 * @param publicKey {@link PublicKey}，必须为yuan.bouncycastle.jcajce.provider.asymmetric.ec.BCECPublicKey
 	 * @param isCompressed 是否压缩
 	 * @return 得到的Q
 	 * @since 5.5.9

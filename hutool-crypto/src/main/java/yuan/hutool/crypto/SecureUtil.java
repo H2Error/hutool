@@ -24,7 +24,7 @@ import yuan.hutool.crypto.symmetric.RC4;
 import yuan.hutool.crypto.symmetric.SymmetricCrypto;
 import yuan.hutool.crypto.symmetric.ZUC;
 import yuan.hutool.crypto.symmetric.fpe.FPE;
-import org.bouncycastle.crypto.AlphabetMapper;
+import yuan.bouncycastle.crypto.AlphabetMapper;
 
 import javax.crypto.Cipher;
 import javax.crypto.Mac;
@@ -991,7 +991,7 @@ public class SecureUtil {
 	 * 增加加密解密的算法提供者，默认优先使用，例如：
 	 *
 	 * <pre>
-	 * addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+	 * addProvider(new yuan.bouncycastle.jce.provider.BouncyCastleProvider());
 	 * </pre>
 	 *
 	 * @param provider 算法提供者

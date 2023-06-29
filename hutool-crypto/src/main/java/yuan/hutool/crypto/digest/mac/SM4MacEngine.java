@@ -1,7 +1,7 @@
 package yuan.hutool.crypto.digest.mac;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.engines.SM4Engine;
+import yuan.bouncycastle.crypto.CipherParameters;
+import yuan.bouncycastle.crypto.engines.SM4Engine;
 
 /**
  * SM4算法的MAC引擎实现

@@ -2,15 +2,15 @@ package yuan.hutool.crypto;
 
 import cn.hutool.core.io.FastByteArrayOutputStream;
 import cn.hutool.core.io.IORuntimeException;
-import org.bouncycastle.asn1.ASN1Encodable;
-import org.bouncycastle.asn1.ASN1Encoding;
-import org.bouncycastle.asn1.ASN1InputStream;
-import org.bouncycastle.asn1.ASN1Object;
-import org.bouncycastle.asn1.ASN1Sequence;
-import org.bouncycastle.asn1.BERSequence;
-import org.bouncycastle.asn1.DERSequence;
-import org.bouncycastle.asn1.DLSequence;
-import org.bouncycastle.asn1.util.ASN1Dump;
+import yuan.bouncycastle.asn1.ASN1Encodable;
+import yuan.bouncycastle.asn1.ASN1Encoding;
+import yuan.bouncycastle.asn1.ASN1InputStream;
+import yuan.bouncycastle.asn1.ASN1Object;
+import yuan.bouncycastle.asn1.ASN1Sequence;
+import yuan.bouncycastle.asn1.BERSequence;
+import yuan.bouncycastle.asn1.DERSequence;
+import yuan.bouncycastle.asn1.DLSequence;
+import yuan.bouncycastle.asn1.util.ASN1Dump;
 
 import java.io.IOException;
 import java.io.InputStream;

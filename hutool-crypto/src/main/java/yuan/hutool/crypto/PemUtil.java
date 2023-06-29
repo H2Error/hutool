@@ -4,10 +4,10 @@ import cn.hutool.core.io.IORuntimeException;
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.StrUtil;
 
-import org.bouncycastle.util.io.pem.PemObject;
-import org.bouncycastle.util.io.pem.PemObjectGenerator;
-import org.bouncycastle.util.io.pem.PemReader;
-import org.bouncycastle.util.io.pem.PemWriter;
+import yuan.bouncycastle.util.io.pem.PemObject;
+import yuan.bouncycastle.util.io.pem.PemObjectGenerator;
+import yuan.bouncycastle.util.io.pem.PemReader;
+import yuan.bouncycastle.util.io.pem.PemWriter;
 
 import java.io.IOException;
 import java.io.InputStream;

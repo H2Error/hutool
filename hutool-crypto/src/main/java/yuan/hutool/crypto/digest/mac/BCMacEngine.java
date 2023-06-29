@@ -1,8 +1,8 @@
 package yuan.hutool.crypto.digest.mac;
 
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.Mac;
-import org.bouncycastle.crypto.params.KeyParameter;
+import yuan.bouncycastle.crypto.CipherParameters;
+import yuan.bouncycastle.crypto.Mac;
+import yuan.bouncycastle.crypto.params.KeyParameter;
 
 /**
  * BouncyCastle的MAC算法实现引擎，使用{@link Mac} 实现摘要<br>

@@ -8,9 +8,9 @@ import yuan.hutool.crypto.ECKeyUtil;
 import yuan.hutool.crypto.KeyUtil;
 import yuan.hutool.crypto.SecureUtil;
 import yuan.hutool.crypto.SmUtil;
-import org.bouncycastle.crypto.engines.SM2Engine;
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.jcajce.spec.OpenSSHPrivateKeySpec;
+import yuan.bouncycastle.crypto.engines.SM2Engine;
+import yuan.bouncycastle.crypto.params.ECPrivateKeyParameters;
+import yuan.bouncycastle.jcajce.spec.OpenSSHPrivateKeySpec;
 import org.junit.Assert;
 import org.junit.Test;
 

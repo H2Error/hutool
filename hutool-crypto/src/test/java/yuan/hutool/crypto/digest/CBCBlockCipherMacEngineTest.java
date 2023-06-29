@@ -3,9 +3,9 @@ package yuan.hutool.crypto.digest;
 import yuan.hutool.crypto.KeyUtil;
 import yuan.hutool.crypto.digest.mac.Mac;
 import yuan.hutool.crypto.digest.mac.SM4MacEngine;
-import org.bouncycastle.crypto.CipherParameters;
-import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.params.ParametersWithIV;
+import yuan.bouncycastle.crypto.CipherParameters;
+import yuan.bouncycastle.crypto.params.KeyParameter;
+import yuan.bouncycastle.crypto.params.ParametersWithIV;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,7 +1,7 @@
 package yuan.hutool.crypto;
 
-import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
-import org.bouncycastle.crypto.params.ECPublicKeyParameters;
+import yuan.bouncycastle.crypto.params.ECPrivateKeyParameters;
+import yuan.bouncycastle.crypto.params.ECPublicKeyParameters;
 import org.junit.Assert;
 import org.junit.Test;
 

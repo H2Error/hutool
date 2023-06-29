@@ -1,7 +1,7 @@
 package yuan.hutool.crypto.symmetric.fpe;
 
 import cn.hutool.core.util.RandomUtil;
-import org.bouncycastle.crypto.util.BasicAlphabetMapper;
+import yuan.bouncycastle.crypto.util.BasicAlphabetMapper;
 import org.junit.Assert;
 import org.junit.Test;
 

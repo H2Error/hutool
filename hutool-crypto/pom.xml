@@ -6,27 +6,30 @@
 
 	<packaging>jar</packaging>
 
-	<parent>
-		<groupId>cn.hutool</groupId>
-		<artifactId>hutool-parent</artifactId>
-		<version>5.8.20</version>
-	</parent>
-
-	<artifactId>hutool-crypto</artifactId>
-	<name>${project.artifactId}</name>
+	<groupId>yuan.hutool</groupId>
+	<artifactId>crypto</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>yuan-sm</name>
 	<description>Hutool 加密解密</description>
 
 	<properties>
 		<Automatic-Module-Name>cn.hutool.crypto</Automatic-Module-Name>
-		<!-- versions -->
-		<bouncycastle.version>1.72</bouncycastle.version>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>cn.hutool</groupId>
-			<artifactId>hutool-core</artifactId>
-			<version>${project.parent.version}</version>
+			<artifactId>hutool-all</artifactId>
+			<version>5.8.18</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<version>5.9.2</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>yuan.bouncycastle</groupId>
